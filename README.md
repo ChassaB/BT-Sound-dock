@@ -5,7 +5,8 @@ The 24pin ribbon cable is exposed when you remove the iPod dock at the front of 
 <img width="3024" height="4032" alt="IMG_0952" src="https://github.com/user-attachments/assets/467041d3-05f0-4a63-bb62-6db05acc315a" />
 
 
-There is no 5V or 3.3V available on any of the 24 pins so the design requires these to be generated. 5V to drive the BT module and 3.3V to operate the sense line (Provided by the iPod usually). Again I had some ND4012DA modules in the parts bin. This module can take the 16V and provide a 5V and 3.3V output. Perfect.
+There is no 5V available on any of the 24 pins so the design requires these to be generated. 5V to drive the BT module and 3.3V to operate the sense line (Provided by the iPod usually). Do not use the 3.3V on the Volume pins (9,10) as any press for volume will pull them low and turn off the speaker. I also had some ND4012DA modules in the parts bin. This module can take the 16V and provide a 5V and 3.3V output. Perfect.
+
 <img width="3024" height="4032" alt="IMG_0954" src="https://github.com/user-attachments/assets/a91ad1c0-4f62-4f33-9260-6619e160fb73" />
 <img width="3024" height="4032" alt="IMG_0955" src="https://github.com/user-attachments/assets/7f2e06aa-efef-49ee-8692-be73eae348de" />
 
@@ -19,7 +20,7 @@ Left audio         -> 14
 Right audio        -> 13
 Audio GND          -> 11 and 12
 Vol down           -> 10 (The volume down button on the iPod daughter board)
-Vol up             -> 9
+Vol up             -> 9  (Both of these are at 3.3V internally. Pulling to ground activates a vol change)
 
 <img width="3024" height="4032" alt="IMG_0953" src="https://github.com/user-attachments/assets/f459cca3-981e-405d-93c2-f2624c3ccc89" />
 
